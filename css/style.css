@@ -647,11 +647,6 @@ img {
   width: 40px;
   top: 10px;
   left: 10px;
-  display: none;
-}
-
-.header-navigation-close.is-visible {
-  display: block;
 }
 
 .header-navigation-menu {
@@ -707,6 +702,11 @@ img {
     background: #1e1f1e;
     padding: 90px 20px 20px 20px;
     display: none;
+    top: 0;
+    position: absolute;
+    left: 0;
+    right: 0;
+    z-index: 4;
   }
   .header-navigation-element {
     width: 100%;
@@ -721,9 +721,9 @@ img {
     text-align: center;
     margin-bottom: 15px;
   }
-  .header-navigation__link:last-child {
+  /* .header-navigation__link:last-child {
     margin: 0;
-  }
+  } */
   .header-content:before, .header-content:after {
     display: none;
   }

@@ -60,3 +60,13 @@ function initMap() {
   // The marker, positioned at Uluru
   var marker = new google.maps.Marker({position: uluru, map: map});
 }
+
+const mobileMenuButton = document.querySelector('.header-navigation-menu');
+const mobileMenuClose = document.querySelector('.header-navigation-close');
+const mobileMenu = document.querySelector('.header-navigation');
+mobileMenuButton.addEventListener('click', function() {
+  mobileMenu.style.display = 'block'
+})
+mobileMenuClose.addEventListener('click', function() {
+  mobileMenu.style.display = 'none'
+})
